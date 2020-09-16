@@ -1,0 +1,34 @@
+.@{css-prefix}action-confirm {
+  text-align: left;
+  margin: 5px 0;
+
+  &-tip-icon {
+    margin-right: 6px;
+    font-size: 16px;
+    color: @action-confirm-warning-color;
+	}
+	
+  &-footer {
+    margin-bottom: -@gap-size;
+		text-align: right;
+		
+		.el-button--text {
+			padding: 8px 0;
+		}
+  }
+}
+.gs-table {
+  td {
+    button + .@{css-prefix}action-confirm-popover {
+      > button {
+        margin-left: 8px !important;
+      }
+    }
+  }
+}
+
+button + .@{css-prefix}action-confirm-popover {
+  > button {
+    margin-left: 8px;
+  }
+}
